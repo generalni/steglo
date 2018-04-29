@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116665865-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116665865-1');
+    </script>
+    <title>Steglo - Git besplatni hosting</title>
+    <meta name="description" content="Iskustva čoveka koji živi u Srbiji"/>
+    <meta name="keywords" content="git, besplatni, hosting"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../css/style-post.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/render.js"></script>
+  </head>
+
+  <body onLoad="render()">
+
+    <!-- HEADER RENDERED THROUGH render.js -->
+
+    <header>
+    </header>
+
+    <main>
+      <div class="container">
+        <article>
+
+          <!-- POST -->
+
+          <div class="single-article post-1">
+            <div class="date-content">
+              <span class="date">02</span>
+              <span class="month">apr</span>
+              <span class="year">2018</span>
+            </div>
+            <div class="text-content">
+
+              <h1>GitHub besplatni hosting</h1>
+              
+              <span>GitHub nudi mogućnost da projekat koji je u formi web strane objavite na internetu u formatu: ime.github.io/ime-projekta ... ali i da ga povežete sa posebnim internet domenom (na primer, www.vase-ime.com). U ovom tekstu se neću baviti instrukcijama za kreiranje projekta na GitHubu.</span>
+
+              <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sRkBB17UFGM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+
+              <span>1. Registrujte internet domen kod neke od firmi koje se bave ovom uslugom. U trenutku pisanja teksta, cena internacionalnog domena (.com) je bila oko 12EUR i zaštita podataka je bila dodatnih 5EUR. Pri registrovanju domena dajete privatne podatke poput adrese, telefona, punog imena i prezimena i ovi podaci su dostupni svima. Ukoliko želite da ovi podaci ne budu dostupni, neophodna je doplata od pomenutih 5EUR. Recimo da smo registrovali domen koji se zove www.steglo.com</span>
+
+              <span>2. GitHub: uđite na svoj profil</span>
+
+              <span>3. GitHub: idite na opciju da vidite repozitorijume ‘Repositories’</span>
+              
+              <span>4. GitHub: kliknite na repozitorijum gde se nalazi projekat koji želite da povežete sa registrovanim internet domenom</span>
+
+              <span>5. GitHub: kliknite na opciju ‘Settings’</span>
+
+              <span>6. GitHub: pod opcijom ‘Settings’ u odeljku ‘GitHub Pages’ podesite ‘Source’ na ‘master-branch’ i kliknite ‘Save’</span>
+
+              <span>7. GitHub: pod opcijom ‘Settings’ u odeljku ‘GitHub Pages’ podesite ‘Custom domain’ na ime internet domena koji ste registrovali, npr. www.steglo.com</span>
+              
+              <span>8. GitHub: Vaš projekat mora sadržati fajl koji se zove ‘CNAME’. Ime fajla je isključivo napisano velikim slovima, bez navodnika i ekstenzije. Fajl ‘CNAME’ treba da bude u glavnom direktorijumu, gde se nalazi i fajl ‘index.html’. U ovom fajlu je samo zapisano ime domena koji ste registrovali, npr. www.steglo.com</span>
+
+              <span>9. Firma kod koje ste registrovali domen će Vam omogućiti da menjate pojedine podatke koji se tiču web domena. Najčešće se to vrši kroz neki vid online servisa za koji će Vam dati korisničko ime i lozinku. Potrebno je da u opciji za promenu DNS parametara unesete ‘A’ record koji će ukazivati na server GitHub-a. IP adresa u trenutku pisanja teksta je 192.30.252.153, GitHub ovaj podatak daje kroz primer za podešavanja na stranici za pomoć korisnicima <a href="https://help.github.com/articles/setting-up-an-apex-domain/">"Configuring an ALIAS or ANAME record with your DNS provider"</a></span>
+
+              <span>Add a record</span>
+              <span>Type: A</span>
+              <span>Name: ime-vaseg-domena.domen (npr. ‘steglo.com’, bez ‘www’ i bez navodnika)</span>
+              <span>TTL: 300</span>
+              <span>Address: 192.30.252.153</span>
+
+              <span>10. Nećete moći momentalno da vidite rezultat. Neophodno je da prođe par minuta od podešavanja do momenta kada ćete moći da pristupite stranici projekta na GitHub-u preko domena sa kojim ste ga povezali.</span>              
+
+            </div>            
+          </div>
+        </article>
+
+        <!-- ASIDE RENDERED THROUGH render.js -->
+
+        <aside>
+        </aside>
+
+      </div>
+    </main>
+
+    <!-- FOOTER RENDERED THROUGH render.js -->
+
+    <footer>
+    </footer>
+  </body>
+</html>
