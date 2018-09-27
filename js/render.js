@@ -1,8 +1,8 @@
 var head = '<div class="container">\
               <div class="logo">\
                 <a href="/index.html">\
-                  <span>Steglo</span>\
-                  <span class="text-highlight">bogami</span>\
+                  <span>popravke & iskustva</span>\
+                  <span class="text-highlight">blog</span>\
                 </a>\
               </div>\
             </div>'
@@ -36,8 +36,8 @@ var right_side = '<!-- YOUTUBE -->\
 
   var foot = '<div class="container">\
                 <span>\
-                  Copyright 2018 | WWW.STEGLO.COM\
-                  <a href="mailto:iooiiio@yahoo.com?Subject=Sa sajta">email: iooiiio@yahoo.com</a>\
+                  Copyright 2018\
+                  <a href="mailto:stojanovic@mts.rs?Subject=Sa sajta">email: stojanovic@mts.rs</a>\
                 </span>\
               </div>'
 
