@@ -15,7 +15,7 @@ var head = '<div class="container">\
   var foot = '<div class="container">\
                 <span>\
                   Copyright 2018\
-                  <a href="mailto:stojanovic@mts.rs?Subject=Sa sajta">email: stojanovic@mts.rs</a>\
+                  <a href="mailto:stojanovic@mts.rs?Subject=Sa sajta">stojanovic@mts.rs</a>\
                 </span>\
               </div>'
 

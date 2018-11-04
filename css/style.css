@@ -40,9 +40,6 @@ header span {
 }
 header span.text-highlight {
   color: red;
-  /* padding: .4rem; */
-  /* border: .1rem solid darkgoldenrod; */
-  /* color: #ea196d; */
 }
 header .youtube img {
   margin-right: 2rem;
@@ -50,13 +47,26 @@ header .youtube img {
   height: auto;
 }
 
+@media only screen and (max-width: 767px) {
+  header .logo {
+    margin-left: 1rem;
+  }
+  header span {
+    font-size: 1.75rem;
+  }
+  header .youtube img {
+    margin-right: 1rem;
+    width: 100px;
+  }
+}
+
 /* NAV */
 
-nav {
+/* nav {
   height: 2.5rem;
   border-top: 1px solid #eeeeee;
   border-bottom: 3px solid #eeeeee;
-}
+} */
 
 /*  MAIN */
 
@@ -82,14 +92,9 @@ article {
   width: 24%;
   margin: 1rem 0;
 }
-/* article:hover {
-  box-shadow: 0 0 20px rgb(231, 231, 231);
-  cursor: pointer;
-} */
 .image-content {
   display: flex;
   justify-content: center;
-  /* width: 100%; */
   height: 250px;
   width: auto;
   overflow: hidden;
@@ -120,20 +125,29 @@ article {
   color: rgb(194, 194, 194);
 }
 
-/*  FOOTER  */
-
-footer {
-  background-color: black;
-}
-footer a {
-  color: white;
-}
-footer span {
-  display: flex;
-  font-weight: 100;
-  justify-content: space-between;
-  padding: 2rem;
-  color: white;
+@media only screen and (max-width: 767px) {
+  section {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .image-content {
+    display: none;
+  }
+  article {
+    justify-content: space-between;
+    width: 100%;
+    margin: .5rem 0;
+  }
+  article:nth-child(odd) {
+    flex-direction: row;
+  }
+  .text-short h2 {
+    font-size: 1.5rem;
+  }
+  main .container {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
 }
 
 /* SINGLE ARTICLE */
@@ -199,26 +213,9 @@ footer span {
   position: absolute;
 }
 
-@media only screen and (max-width: 1024px) {
-  .image-content {
-    display: none;
-  }
-  article {
-    justify-content: space-between;
-    width: 100%;
-  }
-  article:nth-child(odd) {
-    flex-direction: row;
-  }
-  .text-short h2 {
-    font-size: 2rem;
-  }
-  main .container {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-  section {
-    width: 100%;
+@media only screen and (max-width: 767px) {
+  .single-article .text-content {
+    padding: 1rem;
   }
   .single-article .text-content h1 {
     font-size: 2rem;
@@ -229,5 +226,27 @@ footer span {
   .single-article .video-responsive {
     width: 100%;
     padding-bottom: 56.25%;
+  }
+}
+
+/*  FOOTER  */
+
+footer {
+  background-color: black;
+}
+footer a {
+  color: white;
+}
+footer span {
+  display: flex;
+  font-weight: 100;
+  justify-content: space-between;
+  padding: 2rem;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  footer span {
+    padding: 1rem;
   }
 }
