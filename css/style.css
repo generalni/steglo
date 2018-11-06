@@ -38,7 +38,7 @@ header span {
   font-size: 2rem;
   font-weight: 100;
 }
-header span.text-highlight {
+.text-highlight {
   color: red;
 }
 header .youtube img {
@@ -123,6 +123,12 @@ article {
 }
 .text-short .date-content .date {
   color: rgb(194, 194, 194);
+}
+
+@media only screen and (max-width: 1023px) {
+  article {
+    width: 33%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
