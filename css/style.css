@@ -30,8 +30,16 @@ header .container {
   align-items: center;
 }
 header .logo {
+  display: flex;
+  align-items: center;
   margin-left: 2rem;
   padding: 1.5rem 0;
+}
+header .logo img {
+  width: 4rem;
+  height: auto;
+  border-radius: 1rem;
+  margin-right: 1.5rem;
 }
 header span {
   letter-spacing: -.2rem;
@@ -137,15 +145,18 @@ article {
     flex-wrap: nowrap;
   }
   .image-content {
-    display: none;
+    width: 30%;
+    height: 14rem;
   }
   article {
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     margin: .5rem 0;
   }
-  article:nth-child(odd) {
-    flex-direction: row;
+  .text-short {
+    width: 70%;
   }
   .text-short h2 {
     font-size: 1.5rem;
