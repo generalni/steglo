@@ -1,6 +1,6 @@
 var head = '<div class="container">\
               <div class="logo">\
-                <a href="/index.html">\
+                <a href="/">\
                   <span>KAKO \
                   <span class="text-highlight">POPRAVITI</span></span>\
                 </a>\
